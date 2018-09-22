@@ -52,7 +52,7 @@ public class PageController {
 
 
 
-/*
+
 	@RequestMapping(value = {"/challenge", "/challenge/{name}"})
 	public String challengePath(@PathVariable Optional <String> name, Model model) {
 		if (name.isPresent()) {
@@ -64,11 +64,11 @@ public class PageController {
 				return "challenge";
 			
 			
-	}*/
+	}
 		
 		
 	
-	@RequestMapping("/viral/challenge")
+	@RequestMapping("/challenge")
 	public String challenge(@RequestParam(value = "name") String name, Model model) {
 		model.addAttribute("name", name);
 		return "challenge";
